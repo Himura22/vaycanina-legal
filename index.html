@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Netra Vaycanina</title>
+<title>Netra</title>
 <style>
   :root { color-scheme: light dark; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.65;
     max-width: 720px;
     margin: 0 auto;
-    padding: 2rem 1.25rem 4rem;
+    padding: 3rem 1.25rem 4rem;
     color: #1a1a1a;
     background: #ffffff;
   }
@@ -21,9 +21,9 @@
     .meta, footer { color: #999; }
     .card { border-color: #333; background: #1a1a1a; }
   }
-  h1 { font-size: 1.9rem; margin-bottom: 0.25rem; }
-  h2 { font-size: 1.2rem; margin-top: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 0.25rem; }
-  .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+  h1 { font-size: 2rem; margin-bottom: 0.25rem; letter-spacing: -0.01em; }
+  h2 { font-size: 1.2rem; margin-top: 2.5rem; border-bottom: 1px solid #ddd; padding-bottom: 0.25rem; }
+  .meta { color: #666; font-size: 0.95rem; margin-bottom: 2rem; }
   .card {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
@@ -33,71 +33,36 @@
   }
   .card a { font-weight: 600; text-decoration: none; }
   .card a:hover { text-decoration: underline; }
-  ul { padding-left: 1.25rem; }
+  .card .sub { color: #666; font-size: 0.92em; margin-top: 0.35rem; }
   code { background: rgba(127,127,127,0.15); padding: 0.1em 0.35em; border-radius: 3px; font-size: 0.92em; }
   footer { margin-top: 3rem; font-size: 0.85rem; color: #777; border-top: 1px solid #ddd; padding-top: 1rem; }
-  .contact { font-weight: 600; }
 </style>
 </head>
 <body>
 
-<h1>Netra Vaycanina</h1>
-<p class="meta">Private, single-user content automation system &middot; Last updated 14 June 2026</p>
+<h1>Netra</h1>
+<p class="meta">Personal automation portfolio &middot; operated by Baran Yakut</p>
 
-<h2>About</h2>
 <p>
-  <strong>Netra Vaycanina</strong> is a private, single-user content automation system
-  that publishes videos to the owner's own YouTube channel
-  (<a href="https://www.youtube.com/@vaycanina">@vaycanina</a>).
-  It is operated solely by the channel owner on a personal PC.
-  It is <strong>not a public product</strong>, has no third-party users, and accepts no inbound sign-ups.
-</p>
-<p>
-  The application uses Google's YouTube Data API v3 strictly to upload, update metadata, and read
-  analytics for <em>the channel owner's own videos</em>. No other YouTube account is accessed,
-  read, or stored.
+  Netra is a portfolio of private, single-user automation tools built and operated
+  by Baran Yakut. Nothing on this domain is a public-facing product; each project
+  is a personal tool whose only end user is the operator themselves.
 </p>
 
-<h2>Legal Documents</h2>
+<h2>Active Projects</h2>
 
 <div class="card">
-  <a href="privacy.html">Privacy Policy &rarr;</a>
-  <div>How the application handles data when interacting with Google APIs (YouTube Data API v3).</div>
+  <a href="/vaycanina/">Netra Vaycanina &rarr;</a>
+  <div class="sub">YouTube content automation system for the channel <code>@vaycanina</code>. Schedules, generates, and publishes short-form educational videos.</div>
 </div>
-
-<div class="card">
-  <a href="terms.html">Terms of Service &rarr;</a>
-  <div>Operating terms for the application and the channel, including content standards.</div>
-</div>
-
-<h2>OAuth Scopes Requested</h2>
-<ul>
-  <li><code>https://www.googleapis.com/auth/youtube.upload</code> &mdash; upload videos to the owner's own channel</li>
-  <li><code>https://www.googleapis.com/auth/youtube</code> &mdash; update metadata on the owner's own videos</li>
-  <li><code>https://www.googleapis.com/auth/youtube.readonly</code> &mdash; read analytics on the owner's own channel</li>
-</ul>
-<p>
-  All data accessed belongs to the channel owner. The OAuth refresh token is stored only on the
-  owner's local PC and is never transmitted to any third party. See the
-  <a href="privacy.html">Privacy Policy</a> for the full data-handling commitments.
-</p>
-
-<h2>Limited Use Compliance</h2>
-<p>
-  Netra Vaycanina's use of information received from Google APIs adheres to the
-  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
-  including the <strong>Limited Use</strong> requirements. Data is used only to provide the
-  owner-facing publishing feature; it is never sold, shared, or used for advertising.
-</p>
 
 <h2>Contact</h2>
 <p>
-  Questions or concerns: <span class="contact">baranyakutai@gmail.com</span><br>
-  YouTube channel: <a href="https://www.youtube.com/@vaycanina">https://www.youtube.com/@vaycanina</a>
+  <strong>baranyakutai@gmail.com</strong>
 </p>
 
 <footer>
-  &copy; 2026 Netra Vaycanina &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a>
+  &copy; 2026 Netra &middot; <a href="/vaycanina/">Vaycanina</a>
 </footer>
 
 </body>
