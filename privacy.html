@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy &mdash; Netra Vaycanina</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    color: #1a1a1a;
+    background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #121212; }
+    a { color: #6ea8ff; }
+    .meta, footer, .breadcrumb { color: #999; }
+    table { border-color: #333; }
+    th, td { border-color: #333; }
+    th { background: #1a1a1a; }
+  }
+  .breadcrumb { font-size: 0.9rem; color: #666; margin-bottom: 1rem; }
+  h1 { font-size: 1.9rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 0.25rem; }
+  h3 { font-size: 1.05rem; margin-top: 1.5rem; }
+  .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+  ul, ol { padding-left: 1.5rem; }
+  li { margin: 0.25rem 0; }
+  code { background: rgba(127,127,127,0.15); padding: 0.1em 0.35em; border-radius: 3px; font-size: 0.92em; word-break: break-all; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.93rem; }
+  th, td { border: 1px solid #ddd; padding: 0.5rem 0.75rem; text-align: left; vertical-align: top; }
+  th { background: #f3f3f3; font-weight: 600; }
+  footer { margin-top: 3rem; font-size: 0.85rem; color: #777; border-top: 1px solid #ddd; padding-top: 1rem; }
+  em.footer-note { color: #777; }
+</style>
+</head>
+<body>
+
+<div class="breadcrumb"><a href="index.html">&larr; Netra Vaycanina</a></div>
+
+<h1>Privacy Policy &mdash; Netra Vaycanina</h1>
+<p class="meta">
+  <strong>Effective Date:</strong> 14 June 2026 &middot;
+  <strong>Last Updated:</strong> 14 June 2026<br>
+  <strong>Controller:</strong> Netra Vaycanina (operated by Baran Yakut, sole owner of the YouTube channel "Vaycanina")<br>
+  <strong>Contact:</strong> baranyakutai@gmail.com
+</p>
+
+<h2>1. Who This Policy Covers</h2>
+<p>
+  This Privacy Policy describes how the <strong>Netra Vaycanina content automation system</strong>
+  ("the System") handles data when interacting with Google APIs &mdash; specifically the
+  YouTube Data API v3.
+</p>
+<p>
+  The System is a <strong>private, single-user tool</strong> operated by the channel owner to
+  publish content to their own YouTube channel. It is <strong>not a public product</strong>,
+  has no end users other than the channel owner, and does not collect data from third parties.
+</p>
+
+<h2>2. Data We Access via Google APIs</h2>
+<p>The System uses the following Google OAuth scopes:</p>
+<table>
+  <thead><tr><th>Scope</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><code>https://www.googleapis.com/auth/youtube.upload</code></td>
+      <td>Upload videos to the channel owner's own YouTube channel</td>
+    </tr>
+    <tr>
+      <td><code>https://www.googleapis.com/auth/youtube</code></td>
+      <td>Read/update video metadata (title, description, tags, thumbnails) on the owner's own channel</td>
+    </tr>
+    <tr>
+      <td><code>https://www.googleapis.com/auth/youtube.readonly</code></td>
+      <td>Read channel analytics (views, retention, CTR) for the owner's own videos</td>
+    </tr>
+  </tbody>
+</table>
+<p><strong>All data accessed belongs to the channel owner.</strong> The System does not access any other user's data.</p>
+
+<h2>3. What Data the System Stores</h2>
+<table>
+  <thead><tr><th>Data Category</th><th>Storage Location</th><th>Retention</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>OAuth refresh token</td>
+      <td>Local encrypted file on owner's PC (<code>credentials/youtube_token.json</code>)</td>
+      <td>Until manually revoked</td>
+    </tr>
+    <tr>
+      <td>Video metadata of uploaded videos (video ID, title, publish time)</td>
+      <td>Local PostgreSQL database on owner's PC</td>
+      <td>Indefinite (owner's records)</td>
+    </tr>
+    <tr>
+      <td>Analytics snapshots (views, retention, CTR)</td>
+      <td>Local PostgreSQL database on owner's PC</td>
+      <td>Indefinite (for performance review)</td>
+    </tr>
+    <tr>
+      <td>Generated video files before upload</td>
+      <td>Local disk on owner's PC</td>
+      <td>Deleted after successful upload (7-day grace period)</td>
+    </tr>
+  </tbody>
+</table>
+<p>
+  <strong>Nothing is stored on third-party cloud servers</strong> other than YouTube itself
+  (where the videos are published normally).
+</p>
+
+<h2>4. How the Data Is Used</h2>
+<ul>
+  <li>Upload pre-produced video files to the owner's YouTube channel on scheduled times.</li>
+  <li>Read the owner's own analytics to inform the System's content strategy (e.g., which titles performed better).</li>
+  <li>Update video metadata (title, description, thumbnail) on the owner's own videos when revisions are needed.</li>
+</ul>
+<p>The System <strong>does not</strong>:</p>
+<ul>
+  <li>Share, sell, transmit, or expose YouTube data to any third party.</li>
+  <li>Use YouTube data for advertising, profiling, or any purpose unrelated to the channel owner's own content operations.</li>
+  <li>Access any account other than the channel owner's.</li>
+</ul>
+
+<h2>5. Data Sharing with Third Parties</h2>
+<p>
+  <strong>None.</strong> The OAuth refresh token never leaves the owner's local PC. Video files
+  are uploaded directly from the owner's PC to YouTube via the official Google API. No analytics
+  or metadata are transmitted to any external service.
+</p>
+<p>
+  <strong>LLM providers (Anthropic, Google Vertex AI)</strong> are used only for
+  <strong>script generation from public sources</strong> &mdash; they never receive YouTube
+  account data, OAuth tokens, video files, or analytics.
+</p>
+
+<h2>6. Data Security</h2>
+<ul>
+  <li>OAuth tokens are stored locally with OS-level file permissions restricted to the owner's user account.</li>
+  <li>The local PostgreSQL database is not exposed to the public internet (loopback only).</li>
+  <li>The System does not run a public web server or accept inbound connections.</li>
+  <li>Backups of credentials are stored on encrypted local volumes only.</li>
+</ul>
+
+<h2>7. Your Rights</h2>
+<p>
+  Because the System is a <strong>single-user tool operated by the data subject themselves</strong>
+  (the channel owner), GDPR/data subject rights are exercised directly:
+</p>
+<ul>
+  <li><strong>Access:</strong> The owner has full local access to all stored data.</li>
+  <li><strong>Deletion:</strong> The owner can delete the local database and revoke the OAuth token at any time via <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.</li>
+  <li><strong>Portability:</strong> The owner can export their local PostgreSQL database in standard formats at any time.</li>
+</ul>
+<p>There are no other users whose rights need to be exercised against this System.</p>
+
+<h2>8. Compliance with YouTube API Services Terms</h2>
+<p>
+  This System complies with the
+  <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Services Terms of Service</a>
+  and the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the <strong>Limited Use</strong> requirements.
+</p>
+<p>By using YouTube API Services, this System:</p>
+<ul>
+  <li>Limits use of data to providing or improving prominent user-facing features (in this case, the channel owner's own publishing workflow).</li>
+  <li>Does not transfer or sell user data for advertising purposes.</li>
+  <li>Does not use user data for credit-worthiness or lending purposes.</li>
+  <li>Allows humans to read the data only with the data subject's affirmative agreement (in this case, the channel owner is both subject and operator).</li>
+</ul>
+
+<h2>9. Children's Privacy</h2>
+<p>This System is not directed at children and does not knowingly process data of users under 13.</p>
+
+<h2>10. Changes to This Policy</h2>
+<p>
+  Material changes will be reflected on this page with an updated "Last Updated" date.
+  Because the System has only one user (the channel owner), notifications are not sent externally.
+</p>
+
+<h2>11. Contact</h2>
+<p>
+  Questions or concerns: <strong>baranyakutai@gmail.com</strong><br>
+  YouTube channel: <a href="https://www.youtube.com/@vaycanina">https://www.youtube.com/@vaycanina</a>
+</p>
+
+<footer>
+  <em class="footer-note">
+    This Privacy Policy is published as a public commitment required by Google's OAuth
+    Verification process. The Netra Vaycanina System remains a private, single-user automation tool.
+  </em>
+  <br><br>
+  <a href="index.html">&larr; Back to Netra Vaycanina</a> &middot; <a href="terms.html">Terms of Service &rarr;</a>
+</footer>
+
+</body>
+</html>

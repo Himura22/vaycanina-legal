@@ -1,0 +1,23 @@
+# Hassas veri sızıntı koruması (boş repo ama tedbir)
+*.env
+*.env.*
+secrets/
+credentials/
+*.key
+*.pem
+*.p12
+*.json.bak
+youtube_token.json
+.agent_identity.env
+sunucu.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Build outputs (varsa)
+node_modules/
+__pycache__/
